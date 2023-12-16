@@ -224,6 +224,15 @@ html {
     text-shadow: lightgrey 1px 2px 1px;
 }
 
+.category_title_special
+{
+    font-weight: bold;
+    /*font-family: "Old London", serif;*/
+    margin-top: -1%;
+    margin-bottom: -3%;
+    text-shadow: lightgrey 1px 2px 1px;
+}
+
 .app
 {
     /*height: 60vh;*/
