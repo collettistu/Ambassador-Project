@@ -1,0 +1,285 @@
+/* Please work this time :)*/
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    font-family: oldStandard, serif;
+    box-sizing:inherit;
+    margin: 0;
+}
+
+@font-face {
+    font-family: oldLondon;
+    src: url(fonts/OldLondon.ttf);
+}
+
+@font-face {
+    font-family: oldStandard;
+    src: url(fonts/OldStandard-Regular.ttf);
+}
+
+.jump_link
+{
+    font-family: oldLondon, serif;
+    font-size: x-large;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.jump_link:hover
+{
+    color: #9f9f9f;
+    /*outline-color: white;*/
+    /*text-outline: white 5px 5px;*/
+}
+
+.header
+{
+    position: absolute;
+    width: 100%;
+    height: 4vh;
+    box-sizing: border-box;
+    /*max-width: 900px;*/
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #222222;
+    /*word-spacing: 120px;*/
+}
+
+.sus
+{
+    list-style: none;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    /*float: right;*/
+    margin: 0.75vh auto;
+    /*width: 50vw;*/
+}
+
+.Directory
+{
+    display: inline;
+    /*word-spacing: 120px;*/
+    margin: 0 2%;
+}
+
+.ambassador
+{
+    color: yellow;
+}
+
+.main
+{
+    /*display: flex;*/
+    z-index: -1;
+    animation-name: imageSlide;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*animation-timing-function: steps(30, jump-both);*/
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes imageSlide
+{
+    0%, 100%{
+        background-image: url(./img/Exterior_of_Building.jpg);
+    }
+    25%{
+        background-image: url(./img/Pizza+Bridge.jpg);
+    }
+    50%{
+        background-image: url(./img/Margarita.jpg);
+    }
+    75% {
+        background-image: url(./img/veggie-pizza.jpg);
+    }
+}
+
+.main_info
+{
+    text-align: center;
+    /*font-size: 200px;*/
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.shadow_text
+{
+    opacity: 100%;
+    color: white;
+    /*-webkit-text-stroke-color: black;*/
+    /*-webkit-text-stroke-width: 4px;*/
+    text-shadow: black 20px 5px 40px;
+    z-index: 3;
+    font-size: 200px;
+    width: 100%;
+    height: 100%;
+    padding-top: 15vh;
+}
+
+.food_options {
+    list-style: none;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    /*background-color: #333;*/
+    padding: 15px 0;
+}
+
+
+
+.nav-item {
+    margin: 0 15px;
+    /*background-color: #333;*/
+}
+
+.spacer
+{
+    font-family: oldLondon, serif;
+    font-size: x-large;
+    /*cursor: copy;*/
+    text-decoration: none;
+    color: white;
+}
+
+.nounder:hover
+{
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 50vh;
+    position: absolute;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    /*height: 30vh;*/
+    height: auto;
+    width: 100%;
+    z-index: 15;
+    padding-bottom: 2vh;
+}
+
+.hof
+{
+    margin-top: 1.3vh;
+    margin-left: 0.5vw;
+    width: 90%;
+    /*width: 35vw;*/
+}
+
+.appe
+{
+    /*height: 60vh;*/
+}
+
+.pizza
+{
+    /*height: 60vh;*/
+}
+
+.sand
+{
+    /*height: 600px;*/
+}
+
+.Menu {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: 2vh;
+    /*padding-bottom: 2vh;*/
+    z-index: 20;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    width: 60vw;
+    grid-gap: 1vh 2.5vw;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 2vh auto 2vh;
+    /*border-radius: 50%;*/
+}
+
+.category_title
+{
+    font-weight: bold;
+    /*font-family: "Old London", serif;*/
+    margin-bottom: 1%;
+}
+
+.app
+{
+    /*height: 60vh;*/
+}
+
+.bev
+{
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 1vw;
+}
+
+.menu-listing {
+    height: 50px;
+    /*background-color: darkgray;*/
+    border-radius: 8px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.listing-name
+{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.listing-description
+{
+    font-weight: bold;
+    color: black;
+}
+
+/*.center*/
+
+.pog{
+    color: red;
+}
+
+.Open_Hours
+{
+    font-size: x-large;
+    color: yellow;
+}
+
+.Address_Link
+{
+    color: yellow;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.map
+{
+    /*place-self:;*/
+    border: white;
+    float: right;
+}

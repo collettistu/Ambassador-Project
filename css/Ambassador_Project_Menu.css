@@ -1,0 +1,415 @@
+/* Please work this time :)*/
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    font-family: oldStandard, serif;
+    box-sizing:inherit;
+    margin: 0;
+}
+
+@font-face {
+    font-family: oldLondon;
+    src: url(fonts/OldLondon.ttf);
+}
+
+@font-face {
+    font-family: oldStandard;
+    src: url(fonts/OldStandard-Regular.ttf);
+}
+
+.jump_link
+{
+    font-family: oldLondon, serif;
+    font-size: x-large;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.jump_link:hover
+{
+    color: #9f9f9f;
+    /*outline-color: white;*/
+    /*text-outline: white 5px 5px;*/
+}
+
+.header
+{
+    position: absolute;
+    width: 100%;
+    height: 4vh;
+    box-sizing: border-box;
+    /*max-width: 900px;*/
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #222222;
+    /*word-spacing: 120px;*/
+}
+
+.sus
+{
+    list-style: none;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    /*float: right;*/
+    margin: 0.75vh auto;
+    /*width: 50vw;*/
+}
+
+.Directory
+{
+    display: inline;
+    /*word-spacing: 120px;*/
+    margin: 0 2%;
+}
+
+.ambassador
+{
+    color: yellow;
+}
+
+.main
+{
+    /*display: flex;*/
+    z-index: -1;
+    animation-name: imageSlide;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*animation-timing-function: steps(30, jump-both);*/
+    position: absolute;
+    /*top: -30vh;*/
+    /*bottom: 33vh;*/
+    /*height: 67vh;*/
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes imageSlide
+{
+    0%, 100%{
+        background-image: url(./img/Pizza+full_Meal.jpg);
+    }
+    25%{
+        background-image: url(./img/salad.jpg);
+    }
+    50%{
+        background-image: url(./img/cocktails.jpg);
+    }
+    75% {
+        background-image: url(./img/Green+Chicken_Pizza.jpg);
+    }
+}
+
+.main_info
+{
+    text-align: center;
+    /*font-size: 200px;*/
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.shadow_text
+{
+    opacity: 100%;
+    color: white;
+    /*-webkit-text-stroke-color: black;*/
+    /*-webkit-text-stroke-width: 4px;*/
+    text-shadow: black 20px 5px 40px;
+    z-index: 3;
+    font-size: 200px;
+    width: 100%;
+    height: 100%;
+    padding-top: 15vh;
+}
+
+.food_options {
+    list-style: none;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    /*background-color: #333;*/
+    padding: 15px 0;
+}
+
+
+
+.nav-item {
+    margin: 0 15px;
+    /*background-color: #333;*/
+}
+
+.nav-link {
+    font-size: 40px;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nounder:hover
+{
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 50vh;
+    position: absolute;
+    left: 0;
+    display: grid;
+    background-color: black;
+    /*height: 30vh;*/
+    height: auto;
+    width: 100%;
+    z-index: 15;
+    padding-bottom: 2vh;
+}
+
+.appe
+{
+    /*height: 60vh;*/
+}
+
+.sand
+{
+    /*height: 600px;*/
+    padding-bottom: 4.5vh;
+}
+
+.Menu {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: 4vh;
+    /*padding-bottom: 2vh;*/
+    z-index: 20;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95vw;
+    grid-gap: 5vh 2.5vw;
+    height: auto;
+    color: red;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 2vh auto 2vh;
+    /*border-radius: 50%;*/
+}
+
+.pizza
+{
+    height: 40vh;
+    /*margin-bottom: 2vh;*/
+}
+
+.pasta
+{
+    padding-bottom: 9vh;
+    height: 30vh;
+}
+
+.saladmessage
+{
+    display: block;
+    width: 36vw;
+    /*grid-template-columns: 0;*/
+    /*display: flex;*/
+}
+
+.category_title
+{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    /*font-family: "Old London", serif;*/
+    margin-bottom: 1%;
+}
+
+.category_title_salad
+{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 33px;
+    color: black;
+    /*font-family: "Old London", serif;*/
+    margin-bottom: 1%;
+}
+
+.category_subtitle
+{
+    /*text-align: center;*/
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    /*font-family: "Old London", serif;*/
+    margin-bottom: 1%;
+}
+
+.category_subtitle_sand
+{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    /*font-family: "Old London", serif;*/
+    /*margin-bottom: 1%;*/
+    margin-top: 1%;
+}
+
+
+.category_subtitle_bigger
+{
+    /*text-align: center;*/
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+    font-size: 23px;
+    /*font-family: "Old London", serif;*/
+    margin-bottom: 1%;
+}
+
+.category_subtitle_smaller
+{
+    /*text-align: center;*/
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    /*font-family: "Old London", serif;*/
+    margin-bottom: 1%;
+}
+
+
+.price
+{
+    text-align: center;
+    /*font-weight: normal;*/
+    font-style: italic;
+}
+
+.app
+{
+    grid-gap: 11.5vh 2.5vw;
+    padding-bottom: 9vh;
+}
+
+.salad
+{
+    grid-gap: 11vh 2.5vw;
+}
+
+.bev
+{
+    grid-gap: 6.5vh 2.5vw;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 6vh;
+    /*grid-gap: 0 1vw;*/
+}
+
+.sandwich
+{
+    width: 80%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6vh;
+}
+
+.sandwich2
+{
+    height: 100%;
+    /*margin-bottom: 8vh;*/
+    padding-bottom: 6vh;
+}
+
+.category_title_sand
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    /*font-family: "Old London", serif;*/
+    margin-top: 1%;
+}
+
+.build
+{
+    display: block;
+    width: 30vw;
+    height: 80%;
+    /*grid-template-columns: 0;*/
+    /*display: flex;*/
+}
+
+.centered_text
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-listing {
+    height: 50px;
+    /*background-color: darkgray;*/
+    border-radius: 8px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.italic
+{
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.listing-name
+{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.listing-description
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/*.center*/
+
+.pog{
+    color: red;
+}
+
+.Open_Hours
+{
+    font-size: x-large;
+    color: yellow;
+}
+
+.Address_Link
+{
+    color: yellow;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.map
+{
+    /*place-self:;*/
+    border: white;
+    float: right;
+}
