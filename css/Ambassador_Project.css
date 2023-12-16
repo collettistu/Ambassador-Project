@@ -197,6 +197,7 @@ html {
 
 .Open_Hours
 {
+    font-weight: bold;
     text-align: center;
     font-size: x-large;
     color: yellow;
@@ -204,6 +205,7 @@ html {
 
 .Address_Link
 {
+    font-weight: bold;
     color: yellow;
     text-decoration: none;
     font-size: x-large;
